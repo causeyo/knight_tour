@@ -1,8 +1,3 @@
-from random import choice
-import sys
-sys.setrecursionlimit(100)
-
-
 class Chessboard:
 
     def __init__(self, size=8):
@@ -51,19 +46,5 @@ class Chessboard:
             self.show_board()
 
 
-
 chessboard = Chessboard(8)
 chessboard.tour()
-
-
-# knight = Knight()
-# # for m in knight.MOVES:
-# #     print(m, knight.check_move(chessboard, m))
-# # knight.move(chessboard, (2,1), 1)
-# # chessboard.show_board()
-# #
-# chessboard.chessboard[0][0] = 1
-# if not knight.tour(chessboard, step_no=2):
-#     print("FAIL")
-# else:
-#     print("SUCCESS")
